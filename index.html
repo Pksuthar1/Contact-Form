@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn:hover{
+            background-color: #000000;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1><hr>
+    <form action="sumit.php" method="post">
+        <div>
+            <label for="name"><b>Name :</b></label><br>
+            <input type="text" id="name" name="name">
+        </div><br>
+        <div>
+            <label for="email"><b>Email :</b></label><br>
+            <input type="email" id="email" name="email">
+        </div><br>
+        <div>
+            <label for="password"><b>Password :</b></label><br>
+            <input type="password" id="password" name="password">
+        </div><br>
+        <div>
+            <label for="number"><b>Phone No :</b></label><br>
+            <input type="number" id="number" name="number">
+        </div><br>
+        <div>
+            <label for="message"><b>Message :</b></label><br>
+            <textarea name="message" id="message" rows="3" cols="30" required></textarea>
+        </div>
+        <div>
+            <p><b>Gender:</b></p>
+            <label for="male"><b>Male</b></label>
+            <input type="Radio" id="male" name="gender" value="male" checked>
+            <label for="female"><b>Female</b></label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="Other-Gender"><b>Other-Gender</b></label>
+            <input type="radio" id="Other-Gender" name="gender" value="Other-Gender">
+        </div><br>
+        <div>
+            <p><b>Hobbies :</b></p>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading"><b>Reading</b></label><br>
+            <input type="checkbox" id="writting" name="hobby" value="reading">
+            <label for="writting"><b>Writting</b></label><br>
+            <input type="checkbox" id="gaming" name="hobby" value="gaming">
+            <label for="gaming"><b>Gaming</b></label><br>
+            <input type="checkbox" id="sleeping" name="hobby" value="sleeping">
+            <label for="sleeping"><b>Sleeping</b></label>
+        </div><br>
+        <div>
+            <label for="country"><b>Country :</b></label><br>
+            <select name="country" id="country">
+                <option value="Pakistan">Pakistan</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United State Of America">United State Of America</option>
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="submit" value="Submit" class="btn">
+            <input type="reset" value="Reset" class="btn">
+        </div>
+    </form>
+</body>
+</html>
